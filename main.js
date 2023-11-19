@@ -7,10 +7,10 @@ app.use(express.json());
 app.get("/c",(req,res)=>{
     console.log("foi")
     res.status(200).json({message:"Foi"})
-})
+})a
 
 app.get("/",(req,res)=>{
-    res.sendStatus(200)
+    res.sendFile()
 })
 
 app.listen(port, ()=>{
